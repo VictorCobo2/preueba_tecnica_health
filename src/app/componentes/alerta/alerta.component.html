@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>¡Alerta!</h2>
+<mat-dialog-content>
+  <p>{{ data.mensaje }}</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button *ngIf="!data.advertencia" mat-button (click)="onCancelar()">Cancelar</button>
+  <button mat-raised-button color="warn" (click)="onAceptar()">Aceptar</button>
+</mat-dialog-actions>
